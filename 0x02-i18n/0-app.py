@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def holberton():
+def holberton() -> str:
     """Print welcome to holberton"""
     return render_template('index.html')
 
